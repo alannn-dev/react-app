@@ -15,15 +15,13 @@ function ShoppingList() {
 					<li key={cat}>{cat}</li>
 				))}
 			</ul>
-   		<ul>
-				{plantList.map((plant) => (
-				// <li key={plant.id}>{plant.name} {plant.isBestSale ? <span>🔥</span> : null}</li>
-        <li key={plant.id}>{plant.name} {plant.isBestSale && <span>🔥</span>}</li>
-
-        // <li key={plant.id}>{plant.name} {plant.isBestSale && plant.category === "classique" && <span>🔥</span>}</li>
-        // <li key={plant.id}>{plant.name} {(plant.isBestSale || plant.category === "classique") && <span>🔥</span>}</li>
-				))}
-			</ul>		
+      <ul className='lmj-plant-list'>
+        {plantList.map((plant) => (
+          <li key={plant.id} className='lmj-plant-item'>
+            {plant.name} {plant.isSpecialOffer && <span className='lmj-sales'>Solde</span>}
+          </li>
+        ))}
+      </ul>
     </div>
 	)
 }
