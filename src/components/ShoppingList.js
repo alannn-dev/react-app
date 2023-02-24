@@ -1,4 +1,5 @@
 import { plantList } from '../datas/plantList'
+import CareScale from './CareScale'
 import '../styles/ShoppingList.css'
 
 function ShoppingList() {
@@ -19,6 +20,8 @@ function ShoppingList() {
         {plantList.map((plant) => (
           <li key={plant.id} className='lmj-plant-item'>
             {plant.name} {plant.isSpecialOffer && <span className='lmj-sales'>Solde</span>}
+{/*             Pour chanque plantes de PlantList: Ajout 'light'
+ */}            <CareScale scaleValue={plant.light} />
           </li>
         ))}
       </ul>
