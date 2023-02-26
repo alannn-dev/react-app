@@ -20,6 +20,7 @@ function ShoppingList() {
 			</ul>
       <ul className='lmj-plant-list'>
 				{plantList.map(({ id, cover, name, water, light }) => (
+          // Props values from datas folder :
 					<PlantItem
 						key={id}
 						cover={cover}
