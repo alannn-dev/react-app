@@ -1,6 +1,7 @@
 .lmj-footer {
 	color: black;
-	padding: 32px;
+	padding-top: 0;
+	padding-bottom: 32px;
 	border-top: solid 3px black;
 	display: flex;
 	justify-content: flex-start;
@@ -17,10 +18,15 @@
 	margin-bottom: 10px;
 }
 
-.footer-logo {
+/* .footer-logo {
 	display: flex;
 	align-items: center;
 	margin-bottom: -10px;
+} */
+
+.logo-footer {
+	margin-bottom: 0;
+	border-bottom: 0 solid;
 }
 
 .email-input {
