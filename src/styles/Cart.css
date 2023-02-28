@@ -46,3 +46,8 @@
 .lmj-cart-closed > button {
 	color: black;
 }
+
+.cart-list-products {
+	display: grid;
+	gap: 20px;
+}
