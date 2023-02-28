@@ -2,6 +2,8 @@
 	list-style-type: none;
 	padding: 32px;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	max-width: 800px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
