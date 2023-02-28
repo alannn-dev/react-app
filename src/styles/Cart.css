@@ -1,13 +1,3 @@
-/* .lmj-cart {
-  padding: 32px;
-  color: #fff;
-  background-color: #31b572;
-  height: 100vh;
-  width: 200px;
-  position: absolute;
-  z-index: 2;
-} */
-
 .lmj-cart {
 	color: white;
 	background-color: #31b572;
@@ -18,6 +8,7 @@
 	width: 200px;
   height: 100vh;
   width: 200px;
+	border-top: solid 3px black;
   position: absolute;
   z-index: 3;
 }

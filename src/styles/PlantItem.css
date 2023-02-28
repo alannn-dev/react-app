@@ -13,3 +13,8 @@
 	flex-direction: column;
 	text-transform: capitalize;
 }
+
+.name-and-price {
+	display: flex;
+	justify-content: space-between;
+}
