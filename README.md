@@ -1,5 +1,5 @@
 # React.js
-## Small React app
+## React app
 
     1 - React Components (Functional + class components)
     2 - Lists & Keys
