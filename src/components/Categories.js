@@ -1,6 +1,7 @@
 import '../styles/Categories.css'
 
 function Categories({ activeCategory, setActiveCategory, categories }) {
+
 	return (
 		<div className='lmj-categories'>
 			<select
