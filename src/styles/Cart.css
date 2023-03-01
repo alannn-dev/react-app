@@ -1,4 +1,6 @@
 .lmj-cart {
+	position: absolute;
+  z-index: 3;
 	color: white;
 	background-color: #31b572;
 	padding: 32px;
@@ -6,11 +8,10 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 200px;
-  height: 100vh;
+  height: 100%;
   width: 200px;
-	border-top: solid 3px black;
-  position: absolute;
-  z-index: 3;
+  top: 0;
+	right: 0;
 }
 
 .lmj-cart-add-button {
@@ -27,18 +28,34 @@
 	align-self: self-start;
 	padding: 0;
 	color: white;
+	background-color: #31B573;
+	color: white;
+	height: 50px;
+	width: 50px;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .lmj-cart-closed {
-	padding: 32px;
-	width: 200px;
+	position: absolute;
+	top: 30px;
+	right: 50px;
 }
 
 .lmj-cart-closed > button {
 	color: black;
+	right: 50px;
 }
 
 .cart-list-products {
 	display: grid;
 	gap: 20px;
+}
+
+.total {
+	padding-top: 15px;
+	padding-bottom: 7px;
 }
