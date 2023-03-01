@@ -13,11 +13,11 @@ function Cart({ cart, updateCart }) {
     }, [total])
     
     useEffect(() => {
-        alert(`J'aurai ${total}€ à payer 💸(useEffect test)`)
+        console.log(`Total amount is ${total}€ 💸(useEffect test)`)
     }, [total])
     
     // useEffect demos for the cart component :
-    
+
 /*     useEffect(() => {
        console.log(`Alert for each render`)
     }, [total])
@@ -35,6 +35,7 @@ function Cart({ cart, updateCart }) {
     
     
     return isOpen ? (
+        console.log('JSX Rendered'),
 		<div className='lmj-cart'>
 			<button
 				className='lmj-cart-toggle-button'
