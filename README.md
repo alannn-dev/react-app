@@ -1,3 +1,14 @@
+# React.js
+## Small React app
+
+    1 - React Components (Functional + class components)
+    2 - Lists & Keys
+    3 - Condtional Rendering 
+    4 - Props
+    5 - Events
+    6 - States : useState & useEffect
+    7 - Controlled forms.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
