@@ -6,7 +6,7 @@
     3 - Condtional Rendering 
     4 - Props
     5 - Events
-    6 - States : useState & useEffect
+    6 - Hooks : useState & useEffect
     7 - Controlled forms.
 
 # Getting Started with Create React App
