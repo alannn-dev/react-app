@@ -1,5 +1,3 @@
-// import './App.css';
-// import QuestionForm from './QuestionForm'
 import { useState } from 'react'
 import Banner from './Banner'
 import Cart from './Cart'
@@ -8,6 +6,7 @@ import Footer from './Footer'
 
 function App() {
     const [cart, updateCart] = useState([]) // Initializing the state with an empty []
+    const [isFooterShown, updateIsFooterShown] = useState ([false])
     return (
           <div>
             <Banner />
@@ -17,6 +16,8 @@ function App() {
                 <ShoppingList cart={cart} updateCart={updateCart} />
             </div>
             {/*<QuestionForm />*/}
+            <button onClick={() => updateIsFooterShown(!isFooterShown)}>Hide</button>
+            {/*{isFooterShown && <Footer cart={cart}/>}*/}
             <Footer />
           </div>
     )

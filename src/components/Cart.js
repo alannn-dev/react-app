@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/Cart.css'
 
 function Cart({ cart, updateCart }) {
@@ -7,7 +7,34 @@ function Cart({ cart, updateCart }) {
 		(acc, plantType) => acc + plantType.amount * plantType.price,
 		0
 	)
-	return isOpen ? (
+    
+    useEffect(() => {
+        document.title = `LMJ: ${total}€ d'achats`
+    }, [total])
+    
+    useEffect(() => {
+        alert(`J'aurai ${total}€ à payer 💸(useEffect test)`)
+    }, [total])
+    
+    // useEffect demos for the cart component :
+    
+/*     useEffect(() => {
+       console.log(`Alert for each render`)
+    }, [total])
+ 
+    useEffect(() => {
+        console.log(`Alert for the 1st render with the 2nd argument : []`)
+    }, [])
+ 
+    useEffect(() => {
+        console.log(`Alert for the 1st render and when cart is updated : [cart]`)
+    }, [cart])
+
+    // For useEffect alert when delete from the DOM : Footer.js
+ */
+    
+    
+    return isOpen ? (
 		<div className='lmj-cart'>
 			<button
 				className='lmj-cart-toggle-button'
@@ -25,7 +52,7 @@ function Cart({ cart, updateCart }) {
 							</div>
 						))}
 					</ul>
-					<h3>Total : {total}€</h3>
+					<h3 className="total">Total : {total}€</h3>
 					<button onClick={() => updateCart([])}>Clear the cart</button>
 				</div>
 			) : (
@@ -38,7 +65,7 @@ function Cart({ cart, updateCart }) {
 				className='lmj-cart-toggle-button'
 				onClick={() => setIsOpen(true)}
 			>
-				Open the cart
+				CART
 			</button>
 		</div>
 	)

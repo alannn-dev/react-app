@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/Footer.css'
 import Banner from './Banner'
 
@@ -16,15 +16,14 @@ function Footer() {
 		}
 	}
 
+	/* useEffect(() => {
+		console.log(`Alert when delete from the DOM`)
+	})
+ */
 	return (
 		<footer className='lmj-footer'>
 			<div className='lmj-footer-elem'>
         <Banner />
-      {/* <div className="footer-logo">
-        <img src={logo} alt='La maison jungle' className='lmj-logo' />
-        <h1 className='lmj-title'>La maison jungle<span className='trade-mark'>™</span></h1>
-      </div> */}
-     {/*  <p> FOR PLANTS LOVERS 🌱</p> */}
 			</div>
 			<div className='lmj-footer-elem'>Newsletter:</div>
 			<input className="email-input"
