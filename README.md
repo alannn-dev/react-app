@@ -10,8 +10,7 @@
     6 - Hooks : useState & useEffect
     7 - Controlled forms.
 
-    [DEMO](https://a-react.netlify.app/).
-
+[DEMO](https://a-react.netlify.app)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
